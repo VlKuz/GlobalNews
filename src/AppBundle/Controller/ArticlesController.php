@@ -23,8 +23,7 @@ class ArticlesController extends Controller
         ];
 
 
-        return $this ->render('pages/home.html.twig',[
-            'arr' => $arr,
-            ]);
+        return $this ->render('pages/home.html.twig',
+            array( 'arr' => $arr));
     }
 }
