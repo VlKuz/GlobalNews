@@ -19,7 +19,9 @@ class ArticlePageController extends Controller
     public function indexAction($article_id)
     {
         $id = $article_id;
+        $service = new ArticlesController();
+        $data = $service->arrAction();
         return $this->render('pages/articlePage.html.twig',
-        ['id' => $id]);
+        ['id' => $id, 'arr' => $data]);
     }
 }
