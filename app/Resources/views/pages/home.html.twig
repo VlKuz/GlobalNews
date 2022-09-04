@@ -1,0 +1,7 @@
+{% extends 'index.html.twig' %}
+{% block title %}Главная{% endblock %}
+{% block content %}
+    {% block page_title %}<h1>Главная</h1>{% endblock %}
+    {% embed 'components/article.html.twig' %}
+    {% endembed %}
+{% endblock %}

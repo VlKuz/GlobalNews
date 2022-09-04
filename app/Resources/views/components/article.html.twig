@@ -1,0 +1,13 @@
+{% for key, item in arr %}
+    <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">{{ item.topic }}</strong>
+                <h3 class="mb-0">{{ item.title }}</h3>
+                <div class="mb-1 text-muted">{{ item.date }}</div>
+                <p class="card-text mb-auto">{{ item.content }}</p>
+                <a href="{{ path('articlePage', {'article_id' : key}) }}" class="stretched-link">Читать</a>
+            </div>
+        </div>
+    </div>
+{% endfor %}

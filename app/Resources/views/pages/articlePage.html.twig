@@ -1,0 +1,8 @@
+{% extends 'index.html.twig' %}
+{% block title %}Статья{{ id }}{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+{% block content %}
+    <h3>{{ id }}</h3>
+{% endblock %}
