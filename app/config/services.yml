@@ -29,7 +29,10 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
-    AppBundle\Service\ArticlesController:
+    AppBundle\Controller\ArticlesController:
+        autowire: true
+
+    AppBundle\Controller\ArticlePageController:
         autowire: true
 
 
