@@ -13,11 +13,11 @@
 {% block body %}
 <body>
     <div class="container">
-        {% include 'components/header.html.twig' %}
+        {% include 'inc/header.html.twig' %}
         {% block content %}
             {% block page_title %}{% endblock %}
         {% endblock %}
-        {% include 'components/footer.html.twig' %}
+        {% include 'inc/footer.html.twig' %}
     </div>
 </body>
 {% endblock %}
